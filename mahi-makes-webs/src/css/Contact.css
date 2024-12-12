@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+.con-container {
+    padding-top: 70px;
+    padding-bottom: 90px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 30px !important;
+    color: #555;
+    font-weight: 700;
+}
+
+.form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input,
+.textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.textarea {
+    height: 100px;
+    resize: none;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button {
+    padding: 10px 30px !important;
+    cursor: pointer;
+    border-radius: 60px;
+    background: rgb(108,108,112);
+    background: linear-gradient(90deg, rgba(108,108,112,1) 0%, rgba(0,0,0,1) 35%, rgba(54,68,71,1) 100%);
+    font-family: 'Montserrat', sans-serif !important;
+    border: none !important;
+    color: white !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+}
+
+.error {
+    color: rgb(187, 42, 42);
+    font-size: 14px;
+    margin-top: 0px !important;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popup h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.popup p {
+    font-size: 16px;
+    color: rgb(81, 187, 81);
+}
+
+.close-button {
+    margin-top: 15px;
+    background-color: rgb(187, 42, 42);
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.horizontal-bar {
+    border: 0;
+    border-top: 1px solid #747373;
+    width: 50%;
+    margin: 35px auto; 
+    display: block;
+  }
+  .reach-text {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    color: black;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+  }
+  
+  .social-icon {
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    border: 1px solid balck;
+    color: white;
+    background: #333;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .social-icon {
+    font-size: 30px;
+  }
+  

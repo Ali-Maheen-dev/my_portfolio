@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+#projects {
+    padding-top: 7rem !important;
+    padding-bottom: 7rem !important;
+    font-family: 'Montserrat', sans-serif !important;
+    position: relative;
+    overflow: hidden;
+    background: #000;
+    text-align: center;
+}
+
+#projects::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 200%;
+    height: 300%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent);
+    background-size: 50px 50px;
+    animation: threadAnimation 8s linear infinite;
+    z-index: 1;
+}
+
+#projects .container {
+    position: relative;
+    z-index: 2;
+}
+
+#projects .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#projects .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+#projects .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#projects .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+#projects .card-text {
+    flex-grow: 1;
+    font-family: 'Montserrat', sans-serif;
+    color: #555;
+}
+
+#projects .btn-primary {
+    background-color: black;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#projects .btn-primary:hover {
+    background: rgb(108,108,112);
+    background: linear-gradient(90deg, rgba(108,108,112,1) 0%, rgba(0,0,0,1) 35%, rgba(54,68,71,1) 100%);
+    transform: scale(1.05);
+}
+
+#projects h2 {
+    margin-bottom: 4rem !important;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}

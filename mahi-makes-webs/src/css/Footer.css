@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+html {
+  scroll-behavior: smooth !important;
+}
+.footer {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif !important;
+  }
+  
+  .footer-link {
+    text-decoration: none;
+    color: white;
+    margin: 0 5px;
+    transition: color 0.3s ease, transform 0.3s ease; 
+    cursor: pointer;
+}
+
+.footer-link:hover {
+    text-decoration: underline; 
+    color: white; 
+    transform: scale(1.1); 
+    cursor: pointer;
+}
+  
+.gmail-contact{
+  margin-top: 10px;
+  margin-bottom:5px ;
+}
